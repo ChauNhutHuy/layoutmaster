@@ -1,0 +1,15 @@
+.support {
+  background: var(--content-bg-color);
+  &__title h2 {
+    background: #26a1f3;
+  }
+
+  &-content {
+    background-color: var(--suport-bg-content-color);
+  }
+
+  &__table-title th {
+    background-color: var(--suport-table-title-bg-color);
+    padding: 15px;
+  }
+}

@@ -1,0 +1,60 @@
+.nav {
+  & .nav-link {
+    padding: 10px;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: aqua;
+    }
+    &:active {
+      display: block;
+    }
+  }
+}
+.nav-link.active {
+  color: red; /* Đặt màu chữ cho liên kết đang được chọn */
+  background-color: red(
+    $color: #000000
+  ); /* Đặt màu nền cho liên kết đang được chọn thành trong suốt */
+}
+
+// user
+.user__table-title th {
+  background-color: #edf7ff;
+  padding: 15px;
+}
+
+//swtich
+.switch label {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 99px;
+  background: #f9f9f9;
+  outline: 3px solid #e8e8e8;
+  transition: ease 0.2s;
+}
+
+.switch label::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: ease 0.2s;
+}
+
+.switch [type="checkbox"]:checked + label::before {
+  transform: translateX(30px);
+}
+
+.switch [type="checkbox"]:checked + label {
+  background: #72e460;
+  outline-color: #72e460;
+}
+.switch [type="checkbox"]:checked .unlock {
+  display: none;
+}

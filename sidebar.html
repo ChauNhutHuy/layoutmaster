@@ -1,0 +1,89 @@
+<aside class="sidebar ps-5 pt-5">
+  <ul class="sidebar-nav">
+    <li class="mt-3 p-4">
+      <a href="home.html" target="loadpage"
+        ><i class="fa-solid fa-house"></i> Trang chủ</a
+      >
+    </li>
+    <h2 class="mt-5 fs-1">Dịch vụ</h2>
+    <li class="mt-3 p-4">
+      <a href="service.html" onclick="toggleActive(this)" target="loadpage"
+        ><i class="fa-solid fa-briefcase me-3 fs-2"></i>Dịch vụ của tôi</a
+      >
+    </li>
+    <li class="mt-3 p-4">
+      <a href="domain.html" target="loadpage"
+        ><i class="fa-solid fa-earth-americas me-3 fs-2"></i>Quản tí tên miền</a
+      >
+    </li>
+  </ul>
+
+  <ul class="sidebar-nav">
+    <h2 class="mt-3 fs-1">Tài khoản</h2>
+    <li class="mt-3 p-4">
+      <a href="account.html" target="loadpage"
+        ><i class="fa-solid fa-user fs-2 me-3"></i>Thông tin tài khoản</a
+      >
+    </li>
+    <li class="mt-3 p-4">
+      <a href="invoice.html" target="loadpage"
+        ><i class="fa-solid fa-file-lines fs-2 me-3"></i>Hoá đơn</a
+      >
+    </li>
+    <li class="mt-3 p-4">
+      <a href="themeplus.html" target="loadpage"
+        ><i class="fa-solid fa-download fs-2 me-3"></i>Theme & Plugin</a
+      >
+    </li>
+    <li class="mt-3 p-4">
+      <a href="affiliate.html" target="loadpage"
+        ><i class="fa-brands fa-affiliatetheme fs-2 me-3"></i>Affiliate
+        Program</a
+      >
+    </li>
+  </ul>
+
+  <ul class="sidebar-nav">
+    <h2 class="mt-3 fs-1">Hỗ trợ</h2>
+    <li class="mt-3 p-4">
+      <a href="support.html" target="loadpage"
+        ><i class="fa-solid fa-ticket fs-2 me-3"></i>Yêu cầu hỗ trợ</a
+      >
+    </li>
+    <li class="mt-3 p-4">
+      <a href="#!"
+        ><i class="fa-solid fa-phone fs-2 me-3"></i>Hotline: 1800 1093</a
+      >
+    </li>
+  </ul>
+
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var sidebarLinks = document.querySelectorAll(".sidebar-nav a");
+
+      // Mặc định active vào thẻ a đầu tiên
+      sidebarLinks[0].parentNode.style.background =
+        "linear-gradient(to right, #fd235b, #fe4800)";
+      sidebarLinks[0].parentNode.style.borderRadius = "8px";
+
+      sidebarLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          // Loại bỏ background màu và border-radius từ tất cả các mục
+          sidebarLinks.forEach(function (sidebarLink) {
+            sidebarLink.parentNode.style.background = "";
+            sidebarLink.parentNode.style.borderRadius = "";
+          });
+
+          // Thêm background màu và border-radius cho mục được click
+          link.parentNode.style.background =
+            "linear-gradient(to right, #fd235b, #fe4800)";
+          link.parentNode.style.borderRadius = "8px";
+
+          // Hiển thị nội dung tương ứng hoặc thực hiện các thay đổi khác tùy thuộc vào nhu cầu của bạn
+        });
+      });
+    });
+  </script> -->
+</aside>

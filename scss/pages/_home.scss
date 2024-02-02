@@ -1,0 +1,78 @@
+.home {
+  transition: transform 0.3s ease-in-out;
+  &__banner {
+    background: var(--image-home-primary-color);
+  }
+
+  &__account-monney {
+    background: var(--image-home-primary-color);
+  }
+
+  &__card {
+    transition: transform 0.3s ease-in-out;
+    background: var(--card-bg-color);
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: 1px solid;
+    &-thumb {
+      width: 110px;
+      margin-top: 5px;
+    }
+    &:hover {
+      background: var(--image-home-primary-color);
+      color: var(--text-color-white);
+    }
+    &:hover .home__card-thumb {
+      display: none;
+    }
+    &:hover .home__overlay-image {
+      display: block;
+    }
+  }
+
+  &__list-item {
+    width: 448px;
+    overflow: hidden;
+  }
+
+  &__item {
+    width: 136px;
+    height: 66px;
+    padding: 0 20px;
+  }
+  &__overlay-image {
+    display: none;
+    width: 110px;
+    margin-top: 5px;
+  }
+}
+.home__list-item {
+  display: flex;
+  overflow: hidden;
+  width: fit-content;
+  max-width: 450px;
+  /* Độ rộng tối đa của danh sách */
+}
+
+.home__item {
+  overflow: hidden;
+  min-width: 150px; /* Độ rộng tối thiểu của mỗi phần tử */
+  margin-right: 10px;
+  background-color: #3498db; /* Màu nền của mỗi phần tử */
+  color: #fff; /* Màu chữ của mỗi phần tử */
+  text-align: center; /* Căn giữa nội dung */
+  padding: 10px;
+  white-space: nowrap; /* Giữ cho nội dung không bị ngắt dòng */
+  animation: moveRight 10s linear infinite;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-150px * 8)
+    ); /* Di chuyển về bên trái với giá trị âm để tạo hiệu ứng liên tục */
+  }
+}

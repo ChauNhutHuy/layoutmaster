@@ -1,0 +1,67 @@
+.affiliate {
+  color: #fff;
+  &__banner {
+    &-title {
+      font-size: 4.7rem;
+      font-weight: 500;
+    }
+    &-desc {
+      margin: 25px 0;
+      font-size: 3rem;
+    }
+  }
+
+  &__card-thumb {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    margin-top: -20%;
+  }
+
+  &__content {
+    width: 1150px;
+    margin: 0 14px;
+
+    &-img {
+      width: 857px;
+      height: 467px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__program {
+    color: var(--text-color-black);
+    height: 233px;
+  }
+
+  &__program-desc {
+    line-height: 155%;
+  }
+
+  &__collaborator {
+    color: var(--text-color-black);
+    &-title {
+      font-size: 3.5rem;
+    }
+
+    &-inner {
+      height: 260px;
+    }
+
+    &-inner-img {
+      height: 65px;
+      width: 65px;
+      margin: 0 auto;
+    }
+
+    &-inner-title {
+      font-size: 3rem;
+    }
+
+    &-inner-desc {
+      line-height: 120%;
+    }
+  }
+}

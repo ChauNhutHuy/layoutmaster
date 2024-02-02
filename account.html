@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIETNIX</title>
+
+    <!-- embet fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- font anwsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- scripts -->
+    <script src="./assets/js/scripts.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <section
+      class="account overflow-y-auto w-100 ps-4"
+      style="background-color: var(--content-bg-color); overflow-y: auto"
+    >
+      <ul
+        class="nav nav-tabs overflow-y-auto w-100 device-width:100vw"
+        onclick="toggleContent(event)"
+      >
+        <li class="nav-item">
+          <a class="nav-link active" id="1" aria-current="page" href=""
+            >Chi tiết tài khoản</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="2" href="#">Thông tin hoá đơn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="3" href="#">Quản lý người dùng</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="4" aria-disabled="true">Chi tiết liên hệ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="5" aria-disabled="true">Thiết lập bảo mật</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true" id="6">Lịch sử email</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true" id="7">Hồ sơ của bạn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true" id="8">Mật khẩu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true" id="9">Quản lý đăng nhập</a>
+        </li>
+      </ul>
+
+      <!-- Content details account-->
+      <div class="account-content p-4 bg-white account" id="content1">
+        <div class="row">
+          <div class="account__form">
+            <!-- Full name account -->
+            <div class="row mb-4">
+              <div class="col">
+                <label for="account__name" class="form-label mb-3"
+                  >Họ (bắt buộc)</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="account__name"
+                  class="form-control px-3 py-2 fs-3 rounded-4"
+                />
+              </div>
+              <div class="col">
+                <label for="account__name" class="form-label mb-3"
+                  >Tên (bắt buộc)</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="account__name"
+                  class="form-control px-3 py-2 fs-3 rounded-4"
+                />
+              </div>
+            </div>
+
+            <!-- name email -->
+            <div class="row mb-4">
+              <div class="col">
+                <label for="account__email" class="form-label mb-3"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control px-3 py-2 rounded-4 fs-3"
+                  id="account__email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="col">
+                <label for="account__phone" class="form-label mb-3"
+                  >Điện thoại (bắt buộc)</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="account__phone"
+                  class="form-control px-3 py-2 fs-3 rounded-4"
+                />
+              </div>
+            </div>
+
+            <!-- nationality -->
+            <div class="row mb-4">
+              <div class="col">
+                <label for="account__nation" class="form-label mb-3"
+                  >Quốc gia</label
+                >
+                <select
+                  id="account__nation"
+                  class="form-select px-3 py-2 rounded-4 fs-3"
+                >
+                  <option>Việt Nam</option>
+                  <option>Hàn quốc</option>
+                  <option>Thái lan</option>
+                  <option>Úc</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="account__province" class="form-label mb-3"
+                  >Tỉnh/Thành Phố</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="account__province"
+                  class="form-control px-3 py-2 fs-3 rounded-4"
+                />
+              </div>
+            </div>
+
+            <!-- address -->
+            <div class="row mb-4">
+              <div class="col">
+                <label for="account__address" class="form-label mb-3"
+                  >Địa chỉ</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="account__address"
+                  class="form-control px-3 py-2 fs-3 rounded-4"
+                />
+              </div>
+
+              <!-- company -->
+              <div class="col">
+                <label for="account__company" class="form-label mb-3"
+                  >Công ty</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="account__company"
+                  class="form-control px-3 py-2 fs-3 rounded-4 ms-2"
+                />
+              </div>
+            </div>
+
+            <!-- payment methods -->
+            <div class="row mb-4">
+              <div class="col">
+                <label for="account__pay" class="form-label mb-3"
+                  >Phương thức thanh toán</label
+                >
+                <select
+                  id="account__pay"
+                  class="form-select px-3 py-2 rounded-4 fs-3"
+                >
+                  <option>Sử dụng mặc định (Đặt cho mỗi đơn hàng)</option>
+                  <option>Momo payment</option>
+                  <option>Chuyển khoản ngân hàng</option>
+                  <option>PayPal</option>
+                  <option>Credit Card</option>
+                  <option>Tiền mặt</option>
+                </select>
+              </div>
+
+              <!-- Billing contact -->
+              <div class="col">
+                <label for="account__billcontact" class="form-label mb-3"
+                  >Người liên hệ thanh toán mặc định</label
+                >
+                <select
+                  id="account__billcontact"
+                  class="form-select px-3 py-2 rounded-4 fs-3"
+                >
+                  <option>Sử dụng liên hệ mặc định</option>
+                </select>
+              </div>
+            </div>
+
+            <!--Tax code -->
+            <div class="row mb-4">
+              <div class="col">
+                <label for="account__taxcode" class="form-label mb-3"
+                  >Mã số thuê</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="account__taxcode"
+                  class="form-control px-3 py-2 fs-3 rounded-4"
+                />
+              </div>
+
+              <!-- CMND/CCCD -->
+              <div class="col">
+                <label for="account__id" class="form-label mb-3"
+                  >CMND/CCCD</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="account__id"
+                  class="form-control px-3 py-2 fs-3 rounded-4"
+                />
+              </div>
+            </div>
+
+            <!-- language -->
+            <div class="row mb-4">
+              <div class="col-6">
+                <label for="account__language" class="form-label mb-3"
+                  >Ngôn ngữ (mặc định)</label
+                >
+                <select
+                  id="account__language"
+                  class="form-select px-3 py-2 rounded-4 fs-3"
+                >
+                  <option>Default</option>
+                  <option>Vietnamese</option>
+                  <option>Italian</option>
+                  <option>German</option>
+                  <option>French</option>
+                  <option>Farsi</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content info invoice -->
+      <div class="account-content bg-white p-4 account" id="content2">
+        <div class="row mb-4">
+          <!-- company -->
+          <div class="col">
+            <label for="info__invoice-company" class="form-label mb-3 ms-2"
+              >Tên công ty</label
+            >
+            <input
+              type="text"
+              name=""
+              id="info__invoice-company"
+              class="form-control px-3 py-2 fs-3 rounded-4"
+            />
+          </div>
+
+          <!-- company tax -->
+          <div class="col">
+            <label for="info__invoice-tax" class="form-label mb-3 ms-2"
+              >Mã số thuế</label
+            >
+            <input
+              type="text"
+              name=""
+              id="info__invoice-tax"
+              class="form-control px-3 py-2 fs-3 rounded-4"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <!-- addresss -->
+          <div class="col">
+            <label for="info__invoice-address" class="form-label mb-3 ms-2"
+              >Địa chỉ</label
+            >
+            <input
+              type="text"
+              name=""
+              id="info__invoice-address"
+              class="form-control px-3 py-2 fs-3 rounded-4"
+            />
+          </div>
+
+          <!-- email -->
+          <div class="col">
+            <label for="info__invoice-mail" class="form-label mb-3 ms-2"
+              >Email</label
+            >
+            <input
+              type="text"
+              name=""
+              id="info__invoice-mail"
+              class="form-control px-3 py-2 fs-3 rounded-4"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- user management -->
+      <div class="account-content bg-white p-5 account" id="content3">
+        <div class="row">
+          <div class="col">
+            <h3>1 người dùng</h3>
+          </div>
+
+          <div class="col d-flex justify-content-end">
+            <button
+              type="button"
+              class="btn btn-primary fs-2 px-3"
+              style="background: var(--image-banner-bg-color)"
+            >
+              <i class="fa-solid fa-plus me-3"></i>Thêm người dùng mới
+            </button>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="user__table border rounded-top-4 overflow-hidden p-0">
+            <table class="table user__table w-100 mb-0 mt-0">
+              <thead class="user__table-title">
+                <tr>
+                  <th scope="col">Người dùng</th>
+                  <th scope="col">Vai trò</th>
+                  <th scope="col">Lần đăng nhập cuối</th>
+                  <th scope="col">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody class="">
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center p-4">
+                      <div class="me-4">
+                        <img
+                          src="https://th.bing.com/th/id/OIP.7i35GvRSp092_L3KWHr4jgHaHv?pid=ImgDet&w=474&h=495&rs=1"
+                          alt=""
+                          style="width: 42px; height: 42px"
+                        />
+                      </div>
+                      <div class="">
+                        <p>
+                          Ông cố nội <i class="fa-solid fa-chevron-down"></i>
+                        </p>
+                        <p>ongconoi1999@gmail.com</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="align-middle">
+                    <div>
+                      <h2 class="">Người sở hữu</h2>
+                    </div>
+                  </td>
+
+                  <td class="align-middle">
+                    <div class="">
+                      <h2>1 giờ trước</h2>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="account-content bg-white p-5 account" id="content4">
+        <div class="row contact-details">
+          <div class="row p-5 text-center">
+            <h2 class="noContactsMessage">Bạn chưa có liên hệ nào!</h2>
+          </div>
+          <div class="row p-1 d-flex align-items-center justify-content-center">
+            <div class="col-4 text-center mb-3">
+              <button
+                type="button"
+                class="btn btn-outline-primary fs-4 px-5 py-2"
+                onclick="toggleInfo()"
+              >
+                Thêm thông tin liên hệ
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row info" hidden>
+          <h2 class="fs-1 fw-bold mb-5">Thông tin liên hệ</h2>
+          <!-- Full name account -->
+          <div class="row mb-4">
+            <div class="col">
+              <label for="account__name" class="form-label mb-3"
+                >Họ (bắt buộc)</label
+              >
+              <input
+                type="text"
+                name=""
+                id="account__name"
+                class="form-control px-3 py-2 fs-3 rounded-4"
+              />
+            </div>
+            <div class="col">
+              <label for="account__name" class="form-label mb-3"
+                >Tên (bắt buộc)</label
+              >
+              <input
+                type="text"
+                name=""
+                id="account__name"
+                class="form-control px-3 py-2 fs-3 rounded-4"
+              />
+            </div>
+          </div>
+
+          <!-- name email -->
+          <div class="row mb-4">
+            <div class="col">
+              <label for="account__email" class="form-label mb-3"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control px-3 py-2 rounded-4 fs-3"
+                id="account__email"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="col">
+              <label for="account__phone" class="form-label mb-3"
+                >Điện thoại (bắt buộc)</label
+              >
+              <input
+                type="text"
+                name=""
+                id="account__phone"
+                class="form-control px-3 py-2 fs-3 rounded-4"
+              />
+            </div>
+          </div>
+
+          <!-- company vat -->
+          <div class="row mb-4">
+            <div class="col">
+              <label for="account__name" class="form-label mb-3">Công ty</label>
+              <input
+                type="text"
+                name=""
+                id="info_company"
+                class="form-control px-3 py-2 fs-3 rounded-4"
+              />
+            </div>
+            <div class="col">
+              <label for="info_vat" class="form-label mb-3">VAT Number</label>
+              <input
+                type="text"
+                name=""
+                id="info_vat"
+                class="form-control px-3 py-2 fs-3 rounded-4"
+              />
+            </div>
+          </div>
+
+          <!-- language -->
+          <div class="row mb-4">
+            <div class="col">
+              <label for="account__language" class="form-label mb-3"
+                >Ngôn ngữ (mặc định)</label
+              >
+              <select
+                id="info__language"
+                class="form-select px-3 py-2 rounded-4 fs-3"
+              >
+                <option>Default</option>
+                <option>Vietnamese</option>
+                <option>Italian</option>
+                <option>German</option>
+                <option>French</option>
+                <option>Farsi</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="info_code" class="form-label mb-3">Mã bưu điện</label>
+              <input
+                type="text"
+                name=""
+                id="info_code"
+                class="form-control px-3 py-2 fs-3 rounded-4"
+              />
+            </div>
+          </div>
+
+          <!-- Tỉnh thành phố -->
+          <div class="row mb-4">
+            <div class="col">
+              <label for="info_conscious" class="form-label mb-3">Tỉnh</label>
+              <input
+                type="text"
+                name=""
+                id="info_conscious"
+                class="form-control px-3 py-2 fs-3 rounded-4"
+              />
+            </div>
+            <div class="col">
+              <label for="info_city" class="form-label mb-3">Thành phố</label>
+              <input
+                type="text"
+                name=""
+                id="info_city"
+                class="form-control px-3 py-2 fs-3 rounded-4"
+              />
+            </div>
+          </div>
+
+          <!-- info address -->
+          <div class="row mb-4">
+            <div class="col">
+              <label for="info_address" class="form-label mb-3">Tỉnh</label>
+              <input
+                type="text"
+                name=""
+                id="info_address"
+                class="form-control px-3 py-2 fs-3 rounded-4"
+              />
+            </div>
+          </div>
+
+          <!-- email -->
+          <h2 class="fs-1 mb-4">Quyền xem email</h2>
+          <div class="row row-cols-3 g-3 px-4">
+            <div class="col">
+              <div
+                class="p-2 h-30 rounded-4 bg-primary d-flex justify-content-center align-items-center"
+                style="height: 48px"
+              >
+                <div
+                  class="form-check d-flex justify-content-center align-items-center"
+                >
+                  <input
+                    class="form-check-input me-3"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label mt-2" for="flexCheckDefault">
+                    Email chung - Thông báo & Khôi phục mật khẩu
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="p-2 h-30 rounded-4 bg-primary d-flex justify-content-center align-items-center"
+                style="height: 48px"
+              >
+                <div
+                  class="form-check d-flex justify-content-center align-items-center"
+                >
+                  <input
+                    class="form-check-input me-3"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label mt-2" for="flexCheckDefault">
+                    Email hóa đơn - Hóa đơn & Thông báo thanh toán, gia hạn
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="p-2 h-30 rounded-4 bg-primary d-flex justify-content-center align-items-center"
+                style="height: 48px"
+              >
+                <div
+                  class="form-check d-flex justify-content-center align-items-center"
+                >
+                  <input
+                    class="form-check-input me-3"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label mt-2" for="flexCheckDefault">
+                    Email hỗ trợ kỹ thuật - Thông báo khi có thông tin trao đổi
+                    kỹ thuật
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="p-2 h-30 rounded-4 bg-primary d-flex justify-content-center align-items-center"
+                style="height: 48px"
+              >
+                <div
+                  class="form-check d-flex justify-content-center align-items-center"
+                >
+                  <input
+                    class="form-check-input me-3"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label mt-2" for="flexCheckDefault">
+                    Email dịch vụ - Chi tiết đơn hàng, Chào mừng, v.v...
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="p-2 h-30 rounded-4 bg-primary d-flex justify-content-center align-items-center"
+                style="height: 48px"
+              >
+                <div
+                  class="form-check d-flex justify-content-center align-items-center"
+                >
+                  <input
+                    class="form-check-input me-3"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label mt-2" for="flexCheckDefault">
+                    Email tên miền - Thông báo gia hạn, Xác nhận đăng ký, v.v...
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- security settings  -->
+      <div class="account-content bg-white p-5 account" id="content5">
+        <div class="security">
+          <h2 class="fs-2 mb-5 fw-bold">Xác thực 2 yếu tố</h2>
+          <h2 class="fs-3 mb-5">Xác thực 2 yếu tố đã tắt</h2>
+          <div class="row bg-primary mb-4 p-4 rounded-4 ms-1">
+            <h2>
+              Chúng tôi khuyên bạn nên bật xác thực hai yếu tố để cung cấp thêm
+              lớp bảo mật cho tài khoản của mình.
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <button type="button" class="btn btn-primary fs-4 px-5 py-3">
+                Kích hoạt xác thực 2 yếu tố
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- history email -->
+      <div class="account-content bg-white p-5 account" id="content6">
+        <div class="row">
+          <div class="input-group rounded-4">
+            <span
+              class="input-group-text px-4 fs-3 border-end-0 bg-white rounded-start-4 d-flex d-flex justify-content-end"
+              id="basic-addon2"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control p-3 fs-3 border-start-0 rounded-end-4"
+              placeholder="Tìm kiếm hoá đơn"
+              aria-label="Tìm kiếm hoá đơn"
+              aria-describedby="basic-addon2"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <table class="table mt-5 user__table">
+            <thead class="user__table-title border">
+              <tr>
+                <th scope="col" class="rounded-start-4">Thời gian</th>
+                <th scope="col">Tiêu đề email</th>
+                <th scope="col " class="rounded-end-4">Thao tác</th>
+              </tr>
+            </thead>
+            <tbody class="border rounded-4">
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center p-4">
+                    13:01 26/01/2024
+                  </div>
+                </td>
+                <td>
+                  <div class="">
+                    <h2 class="my-4">Tài khoản của quý khách tại VIETNIX</h2>
+                  </div>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary fs-4 px-5 py-2"
+                  >
+                    Xem nội dung
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- profile -->
+      <div class="account-content bg-white p-5 account" id="content7">
+        <div class="row mb-4">
+          <div class="col">
+            <label for="account__name" class="form-label mb-3"
+              >Họ (bắt buộc)</label
+            >
+            <input
+              type="text"
+              name=""
+              id="account__name"
+              class="form-control px-3 py-2 fs-3 rounded-4"
+            />
+          </div>
+          <div class="col">
+            <label for="account__name" class="form-label mb-3"
+              >Tên (bắt buộc)</label
+            >
+            <input
+              type="text"
+              name=""
+              id="account__name"
+              class="form-control px-3 py-2 fs-3 rounded-4"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label for="account__email" class="form-label mb-3"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control px-3 py-2 rounded-4 fs-3"
+              id="account__email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- passwword -->
+      <div class="account-content bg-white p-5 account" id="content8">
+        <div class="row">
+          <h2 class="fs-2 mb-4">Thay đổi mật khẩu</h2>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="row mb-5">
+              <label for="inputPassword5" class="form-label mb-2"
+                >Nhập mật khẩu cũ</label
+              >
+              <input
+                type="password"
+                id="inputPassword5"
+                class="form-control p-2 fs-3 rounded-4"
+                aria-describedby="passwordHelpBlock"
+              />
+            </div>
+
+            <div class="row mb-5">
+              <label for="inputPassword5" class="form-label mb-2"
+                >Nhập mật khẩu cũ mới</label
+              >
+              <input
+                type="password"
+                id="inputPassword5"
+                class="form-control p-2 fs-3 rounded-4"
+                aria-describedby="passwordHelpBlock"
+              />
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputPassword5" class="form-label mb-2"
+                >Nhập mật khẩu mới</label
+              >
+              <input
+                type="password"
+                id="inputPassword5"
+                class="form-control p-2 fs-3 rounded-4"
+                aria-describedby="passwordHelpBlock"
+              />
+            </div>
+
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6 d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary fs-4 px-5 py-2"
+                >
+                  Huỷ
+                </button>
+
+                <button
+                  type="button"
+                  class="btn btn-primary ms-2 fs-4 px-5 py-2"
+                >
+                  Lưu
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <div class="row">
+              <img
+                src="https://portal.vietnix.vn/templates/vietnixv3/img/banner/change-password.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manage logins -->
+      <div class="account-content bg-white p-5 account" id="content9">
+        <h2 class="fs-2 mb-5">Tính năng đăng nhập 1 lần</h2>
+        <div class="row bg-primary p-4 rounded-4 mb-5">
+          <h2>
+            Các ứng dụng của bên thứ ba tận dụng chức năng Single Sign-On (Đăng
+            nhập một lần) để cung cấp quyền truy cập trực tiếp vào tài khoản
+            thanh toán mà không cần phải xác thực lại.
+          </h2>
+        </div>
+
+        <div class="row mb-4">
+          <div class="single d-flex align-items-center">
+            <div class="switch me-3">
+              <input
+                type="checkbox"
+                name=""
+                onchange="toggleElements()"
+                id="switchCheckbox"
+                hidden
+              />
+              <label for="switchCheckbox"></label>
+            </div>
+            <h2 class="lock">
+              Single Sign-On (Đăng nhập một lần) hiện đã bị vô hiệu hóa với tài
+              khoản của bạn
+            </h2>
+            <h2 class="unlock" style="display: none">
+              Single Sign-On (Đăng nhập một lần) hiện đã được mở với tài khoản
+              của bạn
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>
+            Bạn có thể muốn tắt chức năng này nếu bạn cung cấp quyền truy cập
+            vào bất kỳ ứng dụng bên thứ ba nào của mình cho những người dùng mà
+            bạn không muốn họ có thể truy cập vào tài khoản thanh toán của mình.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleInfo() {
+        var infoElement = document.querySelector(".info");
+        // var noContactsMessage = document.getElementById("noContactsMessage");
+        var contactDetailsElement = document.querySelector(".contact-details");
+        infoElement.hidden = !infoElement.hidden;
+
+        contactDetailsElement.style.display = "none";
+      }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Function to toggle content
+        function toggleContent(targetId) {
+          var content = document.getElementById("content" + targetId);
+          if (content) {
+            // Remove 'active' class from all links
+            var navLinks = document.querySelectorAll(".nav-link");
+            navLinks.forEach(function (link) {
+              link.classList.remove("active");
+            });
+
+            // Add 'active' class to the clicked link
+            var targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              targetElement.classList.add("active");
+            }
+
+            // Your additional logic here
+            document
+              .querySelectorAll(".account-content")
+              .forEach((el) => (el.style.display = "none"));
+            content.style.display = "block";
+          }
+        }
+
+        // Check if there's an ID in the URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var initialId = urlParams.get("initialId");
+
+        // If there's an ID, toggle content for that ID
+        if (initialId) {
+          toggleContent(initialId);
+        } else {
+          // If no ID, toggle content for ID '1'
+          toggleContent("1");
+        }
+
+        // Attach click event listener to the navigation links
+        var navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            var targetId = event.target.id;
+            toggleContent(targetId);
+          });
+        });
+      });
+    </script>
+
+    <!-- active cho menu nav -->
+    <!-- direction -->
+
+    <!-- unlock switch -->
+    <script>
+      function toggleElements() {
+        var checkbox = document.getElementById("switchCheckbox");
+        var lockElement = document.querySelector(".lock");
+        var unlockElement = document.querySelector(".unlock");
+
+        if (checkbox.checked) {
+          // Checkbox được chọn, ẩn phần tử lock và hiện phần tử unlock
+          lockElement.style.display = "none";
+          unlockElement.style.display = "block";
+        } else {
+          // Checkbox không được chọn, hiện phần tử lock và ẩn phần tử unlock
+          lockElement.style.display = "block";
+          unlockElement.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
